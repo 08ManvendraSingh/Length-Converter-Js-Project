@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(#e6cfd2,#7f157ff5);
+}
+.lengthBx{
+	max-width: 45%;
+	height: 15rem;
+	background-color: #ffb6c130;
+	box-shadow: 0px 0px 10px #000000ab;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 1rem 0rem;
+	border-radius: 5px;
+	color: #ec3030;
+}
+.valueBx{
+	width: 100%;
+	border:1px solid transparent;
+	padding: 1rem 0rem ;
+}
+.valueBx input{
+	padding-top:.4rem;
+	padding-bottom:.6rem;
+	outline: none;
+	font-size: 1rem;
+	border: 2px solid #407fda;
+}
+.valueBx span{
+	color: black;
+}
+.selectBx{
+	width: 100%;
+	border:1px solid transparent;
+	padding: 1rem 0rem ;
+	display: flex;
+	justify-content: space-evenly;
+}
+.selectBx select{
+	padding-top:.2rem;
+	padding-left: 2rem;
+	padding-bottom:.2rem;
+	outline: none;
+	font-size: 1rem;
+	border: 2px solid black;
+}
+@media only screen and (max-width:992px){
+	.lengthBx{
+		max-width: 60%;
+	}
+}
+@media only screen and (max-width:768px){
+	.lengthBx{
+		max-width: 80%;
+	}
+}
+@media only screen and (max-width:576px){
+	.lengthBx{
+		min-width: 90%;
+	}
+	.valueBx input{
+		display: block;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
